@@ -89,4 +89,4 @@ export function emojiSafeSplit(text, delimiter, trim, preserveSpaces, unescapedC
 		result.push(unescapedCharCodes ? character : character === ">" ? "&gt;" : (character === "<") ? "&lt;" : preserveSpaces && character === " " && (text.charAt(i-1) === " " || text.charAt(i+1) === " ") ? "&nbsp;" : character);
 	}
 	return result;
-    }
+}
